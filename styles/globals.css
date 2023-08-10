@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #ECEBE4;
+}
+
+:root ::dark-theme {
+  background-color: #000202;
+}
+
+:root ::light-theme {
+  background-color: #ecebe4;
+}
+
+h1 {
+  /* @apply text-8xl; */
+  font-family: serif;
+  color: #7e7e7e;
+}
+
+h2 {
+  @apply text-6xl;
+  font-family: gloock;
+}
+
+h3 {
+  @apply text-4xl;
+}
+
+p {
+  font-family: inter;
+}
+
+.FormRoot {
+  width: 260px;
+  padding: 12px;
+  justify-content: center;
+}
+
+.FormField {
+  display: grid;
+  margin-bottom: 12px;
+}
+
+.FormLabel {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 4px;
+  color: #000202;
+}
+
+.FormMessage {
+  font-size: 12px;
+  color: #000202;
+  opacity: 0.8;
+}
+
+.Input,
+.Textarea {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  font-size: 16px;
+  color: grey;
+  box-shadow: 0 0 0 1px var(--black-a9);
+}
+
+.Input:hover,
+.Textarea:hover {
+  box-shadow: 0 0 0 2px #7e7e7e;
+}
+
